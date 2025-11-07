@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import Navbar from '../components/ui/Navbar'
 import Hero from '../components/ui/Hero'
 import Card from '../components/ui/Card'
