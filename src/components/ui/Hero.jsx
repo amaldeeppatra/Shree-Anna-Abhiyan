@@ -6,6 +6,9 @@ import lady1 from '../../assets/lady1.png';
 import robolady from '../../assets/robolady.png';
 import quesmark from '../../assets/quesmark.png';
 
+const KIOSK_URL = import.meta.env.VITE_KIOSK_APP_URL;
+const SURVEY_URL = import.meta.env.VITE_SURVEY_APP_URL;
+
 const Hero = () => {
   return (
     <section className="w-full bg-background py-8 px-4">
@@ -66,12 +69,6 @@ const Hero = () => {
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-6">
           {/* Left Large Card - Wrapped in an <a> tag for an external link */}
-          {/* <a
-            href="https://your-external-shop-website.com" // <-- REPLACE with your actual external URL
-            target="_blank"
-            rel="noopener noreferrer"
-            className="group"
-          > */}
           <div className="hero-card bg-gradient-to-br from-[#806743] to-[#DFCAAC] relative overflow-hidden min-h-[500px] lg:min-h-[600px]">
             <div className="absolute inset-0 p-8 lg:p-12 flex flex-col justify-between">
               <div className="space-y-4">
@@ -88,7 +85,7 @@ const Hero = () => {
               </div>
               <div>
                 <a
-                  href="https://millet-kiosk-app.vercel.app"
+                  href={KIOSK_URL}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="group"
@@ -141,14 +138,6 @@ const Hero = () => {
               </div>
             </div>
             {/* </Link> */}
-
-            {/* Bottom Card - Wrapped in an <a> tag for an external link */}
-            {/* <a
-              href="https://shakti-survey-builder.vercel.app"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="group"
-            > */}
             <div className="hero-card bg-gradient-to-br from-[#C16623] to-[#FFA767] relative overflow-hidden min-h-[240px] lg:min-h-[290px]">
               <div className="absolute inset-0 p-6 lg:p-8 flex flex-col justify-between">
                 <div className="space-y-2">
@@ -164,7 +153,7 @@ const Hero = () => {
                 </div>
                 <div>
                   <a
-                    href="https://shakti-survey-builder.vercel.app"
+                    href={SURVEY_URL}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="group"

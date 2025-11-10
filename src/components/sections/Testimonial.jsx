@@ -70,7 +70,7 @@ const Testimonial = () => {
               className={`w-12 h-12 rounded-full flex items-center justify-center transition-all duration-300 ${
                 currentIndex === 0
                   ? 'bg-gray-200 text-gray-400 cursor-not-allowed'
-                  : 'bg-white text-gray-700 hover:bg-primary hover:text-white shadow-md'
+                  : 'bg-primary text-white hover:bg-primary hover:text-white shadow-md'
               }`}
             >
               <ChevronLeft size={24} />
