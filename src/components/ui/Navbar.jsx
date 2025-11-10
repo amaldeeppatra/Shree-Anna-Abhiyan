@@ -105,7 +105,7 @@ const Navbar = () => {
       title: 'Get Help - Chatbot',
       description: 'Chat with our AI assistant',
       icon: '💬',
-      url: '/chatbot',
+      url: '/chat',
       isExternal: false,
       keywords: [
         'help', 'support', 'assist', 'assistance', 'chat', 'chatbot',
